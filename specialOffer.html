@@ -1,0 +1,468 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gem Stone a Fashion Category Flat Bootstrap Responsive Website Template| Gallery :: w3layouts</title>
+
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.shoppingcart.js"></script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style-2.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Gem Stone Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--webfont-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900'
+		rel='stylesheet' type='text/css'>
+	<!--webfont-->
+	<!-- dropdown -->
+	<script src="js/jquery.easydropdown.js"></script>
+	<link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/modernizr.custom.js"></script>
+	<!--js-->
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+			});
+		});
+	</script>
+	<!---- start-smoth-scrolling---->
+
+	<!-- Extended Boostrap -->
+	<link rel="stylesheet" href="css/glider.css" />
+	<!-- <script src="css/glider.min.css"></script> -->
+	<script src="js/glider.js"></script>
+	<script>
+		window.addEventListener('load', function () {
+			document.querySelector('.glider').addEventListener('glider-slide-visible', function (event) {
+				var glider = Glider(this);
+				console.log('Slide Visible %s', event.detail.slide)
+			});
+			document.querySelector('.glider').addEventListener('glider-slide-hidden', function (event) {
+				console.log('Slide Hidden %s', event.detail.slide)
+			});
+			document.querySelector('.glider').addEventListener('glider-refresh', function (event) {
+				console.log('Refresh')
+			});
+			document.querySelector('.glider').addEventListener('glider-loaded', function (event) {
+				console.log('Loaded')
+			});
+			window._ = new Glider(document.querySelector('#bigSale'), {
+				slidesToShow: 1, //'auto',
+				slideToScroll: 1,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-1',
+				arrows: {
+					prev: '#prev-1',
+					next: '#next-1'
+				}
+			});
+			window._ = new Glider(document.querySelector('#combo'), {
+				slidesToShow: 4, //'auto',
+				slideToScroll: 2,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-2',
+				arrows: {
+					prev: '#prev-2',
+					next: '#next-2'
+				}
+			});
+			window._ = new Glider(document.querySelector('#love'), {
+				slidesToShow: 4, //'auto',
+				slideToScroll: 2,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-3',
+				arrows: {
+					prev: '#prev-3',
+					next: '#next-3'
+				}
+			});
+			window._ = new Glider(document.querySelector('#discount'), {
+				slidesToShow: 4, //'auto',
+				slideToScroll: 2,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-4',
+				arrows: {
+					prev: '#prev-4',
+					next: '#next-4'
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="json/combo.json"></script>
+	<script type="text/javascript" src="json/discount5.json"></script>
+	<script type="text/javascript" src="json/gift-to-love.json"></script>
+</head>
+
+<body>
+	<!--banner-->
+	<div class="banner-bg banner-bg1 page-head">
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="home.html">STONE</a>
+				</div>
+				<div class="top-nav">
+					<label class="mobile_menu" for="mobile_menu">
+						<span>Menu</span>
+					</label>
+					<input id="mobile_menu" type="checkbox">
+					<ul class="nav">
+						<li><a href="home.html"><img src="images/home.png"></a></li>
+
+						<li class="dropdown1"><a href="jewellery.html">PRODUCTS</a>
+							<ul class="dropdown2">
+								<li><a href="jewellery.html">PENDANTS</a></li>
+								<li><a href="jewellery.html">BRACELETS</a></li>
+								<li><a href="jewellery.html">RINGS</a></li>
+								<li><a href="jewellery.html">PEARLS</a></li>
+							</ul>
+						</li>
+						<li><a href="specialOffer.html">SPECIAL OFFERS</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+
+	<!--gallery-->
+	<!--light-box-files -->
+	<script src="js/jquery.chocolat.js"></script>
+	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+	<!--light-box-files -->
+	<script type="text/javascript" charset="utf-8">
+		$(function () {
+			$('.moments-bottom a').Chocolat();
+		});
+	</script>
+	<!--moments-starts-->
+	<div class="moments">
+		<div class="container">
+			<h3>BIG SALE EVENTS</h3>
+			<div class="glider-contain">
+				<div id="bigSale" class="glider">
+					<div><img width="1187" height="400" src="images/Best_Seller_Banner.png"></div>
+					<div><img width="1187" height="400" src="images/banner2.jpg"></div>
+					<div><img width="1187" height="400" src="images/banner3.jpg"></div>
+					<div><img width="1187" height="400" src="images/banner 4.jpg"></div>
+				</div>
+				<button id="prev-1" class="glider-prev">&laquo;</button>
+				<button id="next-1" class="glider-next">&raquo;</button>
+				<div id="dots-1"></div>
+			</div>
+
+			<h3>COMBO SUMMER</h3>
+			<div class="glider-contain">
+				<div id="combo" class="glider cs-style-1">
+					<script> 
+					// height='280px' width='300px'
+						var combo_product = combo_prd;						
+						var productStr = "";
+						combo_product.product.forEach(product => {
+							productStr += "<div class='col-md-4 grid single-product'>"+
+									"<figure class='single-product-figure'>"+
+										"<img class='single-product-image' src='"+product.img+"'>"+							
+										"<figcaption>"+
+											"<div class='product-name'>"+product.name+"</div>"+						
+											"<span><b>$"+product.price+"</b></span>"+
+											"<a href='#' class='cd-add-to-cart js-cd-add-to-cart'"+
+												"data-id='"+product.id+"'" +	
+												"data-name='"+product.name+"'"+
+												"data-src='"+product.img+"'"+
+												"data-price='"+product.price+"'>Add</a> "+
+											"<a href='#' class='view-product'>View</a>"+
+										"</figcaption>"+
+									"</figure>"+
+								"</div>\n";							
+						});
+						document.write(productStr);
+					</script>
+				</div>
+				<button id="prev-2" class="glider-prev">&laquo;</button>
+				<button id="next-2" class="glider-next">&raquo;</button>
+				<div id="dots-2"></div>
+			</div>
+			<!-- <div class="moments-bottom">
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/Image_eproject/Special Offer/">
+						<img src="images/w1.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/w2.jpg">
+						<img src="images/w2.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/w3.jpg">
+						<img src="images/w3.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/w4.jpg">
+						<img src="images/w4.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/w5.jpg">
+						<img src="images/w5.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/w6.jpg">
+						<img src="images/w6.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" class="mask1" href="images/w7.jpg">
+						<img src="images/w7.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/w8.jpg">
+						<img src="images/w8.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="col-md-4 moments-left">
+					<a class="mask1" href="images/w1.jpg">
+						<img src="images/w1.jpg" class="img-responsive zoom-img" alt="name" />
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div> -->
+			<h3>GIFTS TO LOVE </h3>
+			<div class="glider-contain">
+				<div id="love" class="glider cs-style-1">
+					<script> 
+					// height='280px' width='300px'
+						var gtl_product = gtl_prd;						
+						var productStr = "";
+						gtl_product.product.forEach(product => {
+							productStr += "<div class='col-md-4 grid single-product'>"+
+									"<figure class='single-product-figure'>"+
+										"<img class='single-product-image' src='"+product.img+"'>"+							
+										"<figcaption>"+
+											"<div class='product-name'>"+product.name+"</div>"+						
+											"<span><b>$"+product.price+"</b></span>"+
+											"<a href='#' class='cd-add-to-cart js-cd-add-to-cart'"+
+												"data-id='"+product.id+"'" +	
+												"data-name='"+product.name+"'"+
+												"data-src='"+product.img+"'"+
+												"data-price='"+product.price+"'>Add</a> "+
+											"<a href='#' class='view-product'>View</a>"+
+										"</figcaption>"+
+									"</figure>"+
+								"</div>\n";							
+						});
+						document.write(productStr);
+					</script>
+					<!-- <div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/black-banded-onyx-crystal-heart-40mm_20.jpg">
+					</div>
+					<div><img src="images/Image_eproject/Special Offer/Gift to love/Heart/black-obsidian-crystal-heart-45mm_2.jpg"></div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/labradorite-crystal-heart-45mm_40.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/labradorite-two-stone-heart-pendant_4.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/onyx-crystal-heart-45mm_2.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/rainbow-obsidian-heart_2.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/red-tiger-eye-crystal-heart-45mm_2.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/snowflake-obsidian-crystal-heart-45mm_2.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/Heart/tiger-eye-two-stone-heart-pendant_3.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/ROSE/natural_rose_quartz_108_beads_japa_mala_rosary_1_.jpeg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/ROSE/rose-quartz-angel-pendant-40mm_2.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/ROSE/rose-quartz-bracelet_3.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/ROSE/rose-quartz-crystal-apple-3-5cm_2.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/ROSE/rose-quartz-gemstone-bracelet.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/ROSE/rose-quartz-silver-rim-heart-pendant_2.jpg">
+					</div>
+					<div><img
+							src="images/Image_eproject/Special Offer/Gift to love/ROSE/rose_quartz_silver_pendant.jpg">
+					</div>
+ -->
+				</div>
+				<button id="prev-3" class="glider-prev">&laquo;</button>
+				<button id="next-3" class="glider-next">&raquo;</button>
+				<div id="dots-3"></div>
+			</div>
+
+			<h3>DISCOUNT 50% </h3>
+			<div class="glider-contain">
+				<div id="discount" class="glider cs-style-1">
+					<script> 
+					// height='280px' width='300px'
+						var discount_product = discount_prd;						
+						var productStr = "";
+						discount_product.product.forEach(product => {
+							productStr += "<div class='col-md-4 grid single-product'>"+
+									"<figure class='single-product-figure'>"+
+										"<img class='single-product-image' src='"+product.img+"'>"+							
+										"<figcaption>"+
+											"<div class='product-name'>"+product.name+"</div>"+						
+											"<span><b>$"+product.price+"</b></span>"+
+											"<a href='#' class='cd-add-to-cart js-cd-add-to-cart'"+
+												"data-id='"+product.id+"'" +	
+												"data-name='"+product.name+"'"+
+												"data-src='"+product.img+"'"+
+												"data-price='"+product.price+"'>Add</a> "+
+											"<a href='#' class='view-product'>View</a>"+
+										"</figcaption>"+
+									"</figure>"+
+								"</div>\n";							
+						});
+						document.write(productStr);
+					</script>
+				</div>
+				<button id="prev-4" class="glider-prev">&laquo;</button>
+				<button id="next-4" class="glider-next">&raquo;</button>
+				<div id="dots-4"></div>
+			</div>
+
+		</div>
+	</div>
+	<!--moments-->
+	<!--//gallery-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="logo2">
+					<a href="index.html">GEM STONE</a>
+				</div>
+				<div class="ftr-menu">
+					<ul>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="jewellery.html">JEWELLERY</a></li>
+						<li><a href="typography.html">GOLD COINS</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a class="scroll" href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+	<div class="copy-right">
+		<div class="container">
+			<p> &copy; 2015 Gem_Stone. All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a>
+			</p>
+		</div>
+	</div>
+	<!--footer-->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+
+
+	<div class="cd-cart cd-cart--empty js-cd-cart">
+		<a href="#0" class="cd-cart__trigger text-replace">
+			Cart
+			<ul class="cd-cart__count">
+				<!-- cart items count -->
+				<li>0</li>
+				<li>0</li>
+			</ul> <!-- .cd-cart__count -->
+		</a>
+
+		<div class="cd-cart__content">
+			<div class="cd-cart__layout">
+				<header class="cd-cart__header">
+					<h2>Cart</h2>
+					<span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+				</header>
+
+				<div class="cd-cart__body">
+					<ul>
+						<!-- products added to the cart will be inserted here using JavaScript -->
+					</ul>
+				</div>
+
+				<footer class="cd-cart__footer">
+					<a href="#0" class="cd-cart__checkout">
+						<em>Checkout - $<span>0</span>
+							<svg class="icon icon--sm" viewBox="0 0 24 24">
+								<g fill="none" stroke="currentColor">
+									<line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12"
+										x2="21" y2="12" />
+									<polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										points="15,6 21,12 15,18 " />
+								</g>
+							</svg>
+						</em>
+					</a>
+				</footer>
+			</div>
+		</div> <!-- .cd-cart__content -->
+	</div> <!-- cd-cart -->
+	<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+	<script src="js/main.js"></script>
+</body>
+
+
+</html>
